@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveLocalFile",
+    "when": "remoteFileDialogVisible"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "saveAll"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "-saveAll"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.sourceAction",
+    "args": {
+      "kind": "source.addMissingImports",
+      "apply": "first"
+    }
+  }
+]

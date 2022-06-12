@@ -1,0 +1,87 @@
+{
+  "React State": {
+    "scope": "typescriptreact",
+    "prefix": "rstate",
+    "body": [
+      "const [${1}, set${1/(.)/${1:/capitalize}/}] = useState<${3:type}>(${4:defaultValue});"
+    ],
+    "description": "Creates a useState line."
+  },
+  "React Functional Component Without Props": {
+    "scope": "typescriptreact",
+    "prefix": "rfc",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "const ${1:CompName}: React.FC = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$0",
+      "\t\t</>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1:CompName};"
+    ],
+    "description": "Creates a React.FC without a props interface interface with an explicit return"
+  },
+  
+  "React Functional Component With Props": {
+    "scope": "typescriptreact",
+    "prefix": "rfcp",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "interface I${1:CompName}Props {",
+      "}",
+      "",
+      "const ${1:CompName}: React.FC<I${1:CompName}Props> = ({",
+      "\t}: I${1:CompName}Props) => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$0",
+      "\t\t</>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1:CompName};"
+    ],
+    "description": "Creates a React.FC<T> with an explicit return"
+  },
+
+  "Implicit Return React Functional Component Without Props": {
+    "scope": "typescriptreact",
+    "prefix": "irfc",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "const ${1:CompName}: React.FC = () =>",
+      "\t<>",
+      "\t\t$0",
+      "\t</>;",
+      "",
+      "export default ${1:CompName};"
+    ],
+    "description": "Creates a React.FC without a props interface interface with an implicit return"
+  },
+  
+  "Implicit Return React Functional Component With Props": {
+    "scope": "typescriptreact",
+    "prefix": "irfcp",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "interface I${1:CompName}Props {",
+      "}",
+      "",
+      "const ${1:CompName}: React.FC<I${1:CompName}Props> = ({",
+      "\t}: I${1:CompName}Props) =>",
+      "\t<>",
+      "\t\t$0",
+      "\t</>;",
+      "",
+      "export default ${1:CompName};"
+    ],
+    "description": "Creates a React.FC<T> with an implicit return"
+  }
+}
