@@ -12,7 +12,7 @@ https://code.visualstudio.com/docs/editor/userdefinedsnippets
 
 Wherever it says the snippet files go, that's where you should put my `*.code-snippets` files.
 
-My snippets went int `C:\Users\[MYACCT]\AppData\Roaming\Code\User\snippets`
+My snippets went in `C:\Users\[MYACCT]\AppData\Roaming\Code\User\snippets`
 
 ## Keybindings
 To add custom keybindings, use the command panel in VS Code (ctrl+shift+p) and type/choose `Preferences: Open Keyboard Shortcuts JSON`.
