@@ -31,6 +31,14 @@
     ],
     "description": "Creates a useState line."
   },
+  "React Redux Dispatcher": {
+    "scope": "typescriptreact",
+    "prefix": "rdisp",
+    "body": [
+      "const dispatch = useAppDispatch();"
+    ],
+    "description": "Creates a useAppDispatch."
+  },
   "React Functional Component Without Props": {
     "scope": "typescriptreact",
     "prefix": "rfc",
