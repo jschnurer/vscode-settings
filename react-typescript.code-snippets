@@ -1,4 +1,28 @@
 {
+  "React Redux Slice": {
+    "scope": "typescript",
+    "prefix": "rslice",
+    "body": [
+      "import { createSlice } from \"@reduxjs/toolkit\";",
+      "",
+      "export interface I${1/(.)/${1:/capitalize}/}State {",
+      "}",
+      "",
+      "const initialState: I${1/(.)/${1:/capitalize}/}State = {",
+      "};",
+      "",
+      "export const ${1}Slice = createSlice({",
+      "  name: \"${1/(.)/${1:/downcase}/}\",",
+      "  initialState,",
+      "  reducers: {",
+      "  },",
+      "});",
+      "",
+      "export const {",
+      "} = ${1}Slice.reducer;"
+    ],
+    "description": "Creates a React Redux Slice"
+  },
   "React State": {
     "scope": "typescriptreact",
     "prefix": "rstate",
@@ -25,7 +49,6 @@
     ],
     "description": "Creates a React.FC without a props interface interface with an explicit return"
   },
-  
   "React Functional Component With Props": {
     "scope": "typescriptreact",
     "prefix": "rfcp",
@@ -48,7 +71,6 @@
     ],
     "description": "Creates a React.FC<T> with an explicit return"
   },
-
   "Implicit Return React Functional Component Without Props": {
     "scope": "typescriptreact",
     "prefix": "irfc",
@@ -64,7 +86,6 @@
     ],
     "description": "Creates a React.FC without a props interface interface with an implicit return"
   },
-  
   "Implicit Return React Functional Component With Props": {
     "scope": "typescriptreact",
     "prefix": "irfcp",
@@ -83,5 +104,25 @@
       "export default ${1:CompName};"
     ],
     "description": "Creates a React.FC<T> with an implicit return"
+  },
+  "Default Export Interface": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "dfinterface",
+    "body": [
+      "export default interface ${1:InterfaceName} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an interface as the default export"
+  },
+  "Exported Interface": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "exinterface",
+    "body": [
+      "export interface ${1:InterfaceName} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Creates an exported interface"
   }
 }
