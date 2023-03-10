@@ -35,7 +35,7 @@
     "scope": "typescriptreact",
     "prefix": "rdisp",
     "body": [
-      "const dispatch = useAppDispatch();"
+      "const dispatch = useApp$0Dispatch();"
     ],
     "description": "Creates a useAppDispatch."
   },
