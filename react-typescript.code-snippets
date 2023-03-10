@@ -39,6 +39,14 @@
     ],
     "description": "Creates a useAppDispatch."
   },
+  "React Redux Selector": {
+    "scope": "typescriptreact",
+    "prefix": "rselector",
+    "body": [
+      "const value = useApp$0Selector(store => store);"
+    ],
+    "description": "Creates a useAppDispatch."
+  },
   "React Functional Component Without Props": {
     "scope": "typescriptreact",
     "prefix": "rfc",
